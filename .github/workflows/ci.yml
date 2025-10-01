@@ -1,0 +1,18 @@
+name: ci
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install
+        run: npm ci || npm i
+      - name: Smoke test (no-geom)
+        run: node cli.mjs examples/sample.step --indent 0 > /dev/null

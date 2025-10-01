@@ -1,0 +1,28 @@
+{
+  "name": "step2json",
+  "version": "0.1.0",
+  "description": "Convert STEP (.stp) to JSON: header, entity histogram, optional volume/bounds (OCCT).",
+  "type": "module",
+  "bin": {
+    "step2json": "./cli.mjs"
+  },
+  "scripts": {
+    "test": "node cli.mjs examples/sample.step --indent 0 > /dev/null",
+    "ci": "node cli.mjs examples/sample.step --indent 0 > /dev/null"
+  },
+  "keywords": [
+    "STEP",
+    "STP",
+    "CAD",
+    "CNC",
+    "CLI",
+    "JSON",
+    "OpenCascade",
+    "OCCT"
+  ],
+  "author": "You",
+  "license": "MIT",
+  "dependencies": {
+    "occt-import-js": "^0.0.23"
+  }
+}

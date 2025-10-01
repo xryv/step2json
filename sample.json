@@ -1,0 +1,96 @@
+{
+  "tool": "step2json",
+  "version": "0.1.0",
+  "file": {
+    "name": "sample.step",
+    "sizeBytes": 1108354
+  },
+  "header": {
+    "FILE_SCHEMA": "CONFIG_CONTROL_DESIGN",
+    "FILE_DESCRIPTION": "STEP AP203",
+    "FILE_NAME": "Motor Nichibo Huayi 20V_SEP 29 2025.STEP",
+    "timestamp": "2025-10-01T06:23:21",
+    "preprocessor": "SwSTEP 2.0",
+    "originatingSystem": "SolidWorks 2020"
+  },
+  "summary": {
+    "totalEntities": 14170,
+    "uniqueTypes": 53
+  },
+  "entities": {
+    "FACE_OUTER_BOUND": 478,
+    "ADVANCED_FACE": 478,
+    "CARTESIAN_POINT": 2745,
+    "DIRECTION": 2698,
+    "AXIS2_PLACEMENT_3D": 1146,
+    "CIRCLE": 673,
+    "EDGE_CURVE": 1116,
+    "ORIENTED_EDGE": 2232,
+    "VERTEX_POINT": 671,
+    "CYLINDRICAL_SURFACE": 211,
+    "VECTOR": 406,
+    "EDGE_LOOP": 503,
+    "LINE": 406,
+    "TOROIDAL_SURFACE": 125,
+    "B_SPLINE_CURVE_WITH_KNOTS": 34,
+    "PLANE": 104,
+    "CLOSED_SHELL": 4,
+    "PRODUCT_RELATED_PRODUCT_CATEGORY": 1,
+    "COORDINATED_UNIVERSAL_TIME_OFFSET": 5,
+    "SPHERICAL_SURFACE": 26,
+    "APPROVAL": 3,
+    "APPROVAL_ROLE": 3,
+    "ORGANIZATION": 1,
+    "FACE_BOUND": 25,
+    "CONICAL_SURFACE": 6,
+    "UNCERTAINTY_MEASURE_WITH_UNIT": 1,
+    "PERSON_AND_ORGANIZATION_ROLE": 5,
+    "APPLICATION_PROTOCOL_DEFINITION": 2,
+    "PERSON_AND_ORGANIZATION": 8,
+    "SECURITY_CLASSIFICATION": 1,
+    "CC_DESIGN_PERSON_AND_ORGANIZATION_ASSIGNMENT": 5,
+    "DESIGN_CONTEXT": 1,
+    "DATE_AND_TIME": 5,
+    "APPROVAL_DATE_TIME": 3,
+    "PRODUCT": 1,
+    "PRODUCT_DEFINITION": 1,
+    "PRODUCT_DEFINITION_FORMATION_WITH_SPECIFIED_SOURCE": 1,
+    "APPROVAL_PERSON_ORGANIZATION": 3,
+    "LOCAL_TIME": 5,
+    "CC_DESIGN_APPROVAL": 3,
+    "CALENDAR_DATE": 5,
+    "DATE_TIME_ROLE": 2,
+    "CC_DESIGN_DATE_AND_TIME_ASSIGNMENT": 2,
+    "APPLICATION_CONTEXT": 2,
+    "SECURITY_CLASSIFICATION_LEVEL": 1,
+    "APPROVAL_STATUS": 3,
+    "PERSON": 1,
+    "MANIFOLD_SOLID_BREP": 4,
+    "SHAPE_DEFINITION_REPRESENTATION": 1,
+    "MECHANICAL_CONTEXT": 1,
+    "CC_DESIGN_SECURITY_CLASSIFICATION": 1,
+    "PRODUCT_DEFINITION_SHAPE": 1,
+    "ADVANCED_BREP_SHAPE_REPRESENTATION": 1
+  },
+  "geometry": {
+    "unit": "millimeter",
+    "bbox": {
+      "min": [
+        -25,
+        -0.2500000000000002,
+        -25
+      ],
+      "max": [
+        25,
+        38.00000000000001,
+        25
+      ]
+    },
+    "size": {
+      "x": 50,
+      "y": 38.25000000000001,
+      "z": 50
+    },
+    "volumeApprox": 35620.1177036548
+  }
+}

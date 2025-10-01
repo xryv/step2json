@@ -9,10 +9,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Install
         run: npm ci || npm i
+
+      # Descobre um STEP de exemplo em examples/ com qualquer casing (.step/.stp)
+      - name: Locate example STEP file
+        id: locate
+        shell: bash
+        run: |
+          set -e
+          FILE=$(ls examples/*.[sS][tT][eE][pP] 2>/dev/null | head -n1 || true)
+          if [ -z "$FILE" ]; then
+            echo "No STEP file found under examples/. Ensure you have at least one (e.g., examples/sample.step)" >&2
+            exit 1
+          fi
+          echo "Found STEP file: $FILE"
+          echo "STEP_FILE=$FILE" >> "$GITHUB_ENV"
+
       - name: Smoke test (no-geom)
-        run: node cli.mjs examples/sample.step --indent 0 > /dev/null
+        run: node cli.mjs "$STEP_FILE" --indent 0 > /dev/null
